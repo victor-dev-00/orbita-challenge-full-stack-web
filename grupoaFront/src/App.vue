@@ -6,18 +6,23 @@
       
         <v-navigation-drawer>
           <v-list>
+            <!-- Logo and title -->
             <v-list-item height="auto">
               <div >
+                <!-- Logo image -->
                 <img style="display:block; margin-left:auto; margin-right:auto" src="./assets/grupoa.png" alt="" width="150px">
               </div>
+              <!-- Title -->
               <v-list-item-title align="center">Modulo Academico</v-list-item-title>
             </v-list-item>
           </v-list>
           <v-divider></v-divider>
+          <!-- Navigation link -->
           <v-list-item link="true">
-            Alunos
+            <router-link to="/list">Alunos</router-link>
           </v-list-item>
         </v-navigation-drawer>
+        <!-- App bar -->
         <div style="; margin-top:auto; margin-bottom:auto; height: 50px;">
           <v-app-bar flat="true">
             <v-toolbar-title align="center" ><v-text>Consulta de
@@ -26,7 +31,11 @@
         </div>
 
       <v-divider></v-divider>
-      <List />
+        <router-view >
+          <!-- Router view -->
+          <list />
+        </router-view>
+
     </v-main>
   </v-app>
 </template>
@@ -35,14 +44,17 @@
 /**
  * Import necessary modules and define variables
  **/
+import CadastroAlunoVue from "./components/CadastroAluno.vue";
+import HomeVue from "./components/Home.vue";
 import List from "./components/List.vue";
 
 components: {
-  List
+  CadastroAlunoVue, // Component for student registration
+  HomeVue, // Home component
+  List // List component
 }
-computed: [{
-  title() {
-    return this.$route.name
-  }
-}]
+
+
+
+
 </script>
