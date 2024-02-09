@@ -1,36 +1,44 @@
 import * as Vue from 'vue'
 import * as Router from 'vue-router'
-import List from './components/List.vue'  // Import the List component
-import Home from './components/Home.vue'  // Import the Home component
-import CadastroAluno from './components/CadastroAluno.vue'  // Import the CadastroAluno component
+import List from './views/List.vue'  // Import the List component
+import Home from './views/Home.vue'  // Import the Home component
+import Cadastro from './views/Cadastro.vue'  // Import the Cadastro  component
 
-const app = Vue.createApp({})
+/**
+ * Register Vue Router plugins
+ * @param {object} app - The Vue application
+ */
+const registerPlugins = (app) => {
+    app.use(Router) // Register the Vue Router
+}
 
 /**
  * Create a new Vue Router instance
  */
-app.use(Router)
+const routes = [
+    {
+        path: '/',
+        name: 'home',
+        component: Home
+    },
+    {
+        path: '/list',
+        name: 'list',
+        component: List
+    },
+    {
+        path: '/cadastro',
+        name: 'cadastro',
+        component: Cadastro
+    },
+]
+
+const router = Router.createRouter({
+    history: Router.createWebHistory(),
+    routes
+})
 
 /**
  * Export the routes for the Vue Router
  */
-export default ({
-    routes: [
-        {
-            path: '/',  // Define the path for the Home component
-            name: 'Home',  // Define the name for the Home component
-            component: Home  // Set the Home component as the route component
-        },
-        {
-            path: '/list',  // Define the path for the List component
-            name: 'List',  // Define the name for the List component
-            component: List  // Set the List component as the route component
-        },
-        {
-            path: '/cadastro',  // Define the path for the CadastroAluno component
-            name: 'CadastroAluno',  // Define the name for the CadastroAluno component
-            component: CadastroAluno  // Set the CadastroAluno component as the route component
-        }
-    ],
-    
-})
+export default router;

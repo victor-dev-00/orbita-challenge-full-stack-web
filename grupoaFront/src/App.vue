@@ -3,58 +3,62 @@
   <v-app>
     <!-- Main content area -->
     <v-main>
-      
-        <v-navigation-drawer>
-          <v-list>
-            <!-- Logo and title -->
-            <v-list-item height="auto">
-              <div >
-                <!-- Logo image -->
-                <img style="display:block; margin-left:auto; margin-right:auto" src="./assets/grupoa.png" alt="" width="150px">
-              </div>
-              <!-- Title -->
-              <v-list-item-title align="center">Modulo Academico</v-list-item-title>
-            </v-list-item>
-          </v-list>
-          <v-divider></v-divider>
-          <!-- Navigation link -->
-          <v-list-item link="true">
-            <router-link to="/list">Alunos</router-link>
-          </v-list-item>
-        </v-navigation-drawer>
-        <!-- App bar -->
-        <div style="; margin-top:auto; margin-bottom:auto; height: 50px;">
-          <v-app-bar flat="true">
-            <v-toolbar-title align="center" ><v-text>Consulta de
-                Alunos</v-text></v-toolbar-title>
-          </v-app-bar>
-        </div>
+      <!-- Main navigation drawer -->
+      <v-navigation-drawer elevation="2" v-model="drawer" >
+        <v-list>
+          <!-- Logo -->
+          <img src="./assets/grupoa.png" alt="logo escrito grupoa educação" width="200"
+            style="margin-left: auto; margin-right: auto; display: block" />
+          <!-- Home link -->
+          <v-list-item prepend-icon="mdi-home" title="Modulo Academico" link to="/"></v-list-item>
+        </v-list>
 
-      <v-divider></v-divider>
-        <router-view >
-          <!-- Router view -->
-          <list />
-        </router-view>
+        <v-divider></v-divider>
 
+        <v-list density="compact" nav>
+          <!-- List link -->
+          <v-list-item prepend-icon="mdi-account-group" title="Consulta de Alunos" link to="/list"></v-list-item>
+
+          <v-list-item prepend-icon="mdi-account-plus" title="Cadastrar Aluno" link to="/cadastro"></v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+
+      <!-- Main navigation bar -->
+      <v-app-bar app color="primary" >
+        <v-app-bar-nav-icon @click="toggleDrawer()"></v-app-bar-nav-icon>
+        <v-text class="ml-2"></v-text>
+      </v-app-bar>
+
+      <!-- Style for the content -->
+      <div style="
+          border: 1px solid black;
+          height: 100%;
+          padding: 10px;
+          margin: 10px;
+        ">
+        <!-- Router view -->
+        <router-view></router-view>
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script setup>
 /**
- * Import necessary modules and define variables
- **/
-import CadastroAlunoVue from "./components/CadastroAluno.vue";
-import HomeVue from "./components/Home.vue";
-import List from "./components/List.vue";
+ * Import necessary Vue modules and define variables
+ */
 
-components: {
-  CadastroAlunoVue, // Component for student registration
-  HomeVue, // Home component
-  List // List component
-}
+import { ref } from "vue";
 
+/**
+ * Define a reactive variable for controlling the drawer visibility
+ */
+const drawer = ref(true);
 
-
-
+/**
+ * Toggle the visibility of the drawer
+ */
+const toggleDrawer = () => {
+  drawer.value = !drawer.value;
+};
 </script>

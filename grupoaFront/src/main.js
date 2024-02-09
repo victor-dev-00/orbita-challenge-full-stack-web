@@ -11,8 +11,7 @@ import App from './App.vue'
 
 // Composables
 import { createApp } from 'vue'
-import * as router from './router.js'
-import VueResource from 'vue-resource'
+import router from './router'
 
 
 
