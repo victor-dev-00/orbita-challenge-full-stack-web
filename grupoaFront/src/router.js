@@ -1,8 +1,8 @@
 import * as Vue from 'vue'
 import * as Router from 'vue-router'
 import List from './views/List.vue'  // Import the List component
-import Home from './views/Home.vue'  // Import the Home component
-import Cadastro from './views/Cadastro.vue'  // Import the Cadastro  component
+import Register from './views/Register.vue'  // Import the Cadastro  component
+import Edit from './views/Edit.vue'  // Import the Cadastro  component
 
 /**
  * Register Vue Router plugins
@@ -16,21 +16,22 @@ const registerPlugins = (app) => {
  * Create a new Vue Router instance
  */
 const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: Home
-    },
+
     {
         path: '/list',
         name: 'list',
         component: List
     },
     {
-        path: '/cadastro',
-        name: 'cadastro',
-        component: Cadastro
+        path: '/register',
+        name: 'register',
+        component: Register
     },
+    {
+        path: '/edit/:id',
+        name: 'edit',
+        component: Edit
+    }
 ]
 
 const router = Router.createRouter({
