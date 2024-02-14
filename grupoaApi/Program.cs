@@ -40,6 +40,8 @@ if (app.Environment.IsDevelopment())
     app.UseCors("CorsPolicy");
 }
 
+app.UseCors("CorsPolicy");
+
 app.Student(); // Handle student request
 
 // Run the application
