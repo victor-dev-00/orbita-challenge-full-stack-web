@@ -2,14 +2,16 @@
  # Entrega
  
  - Decisão da arquitetura utilizada. 
-    - Foi tentado a ultilização o padrão MVC para por conta da sua separação por camadas bem definidas.    
+    - Foi ultilizado o padrão MVC por conta da sua separação por camadas bem definidas.  **[link para documentação](./Docs.md)**
+
 
  - Lista de bibliotecas de terceiros utilizadas. 
-    - Sem ultilização de outras bibliotecas fora do ecosistema do Vue.
+    - Axios para consumir api em C#. 
+
 
  - O que você melhoraria se tivesse mais tempo
-    - Teria terminado de integragrar os componentes com a rota e api, e integrado os dados como o banco.
+    - Revisaria 
     
  - Quais requisitos obrigatórios que não foram entregues
- **API** - incompleto 
- **Banco** 
+   
+   **Testes**, foi tentando implementação de tests no projeto, mas por conta da falta de experiencia na criação do mesmo optei em retirar do projeto.
