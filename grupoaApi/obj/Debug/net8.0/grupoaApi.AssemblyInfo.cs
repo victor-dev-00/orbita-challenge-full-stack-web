@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("grupoaApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c7bcc18ca38cecd658631a6c7494e33b2b08fb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc5e2159630cec562f087b2d0caaca259321d53b")]
 [assembly: System.Reflection.AssemblyProductAttribute("grupoaApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("grupoaApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,4 @@
 using grupoaApi.Context;
-using Microsoft.AspNetCore.Components;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -7,6 +6,7 @@ public static class StudentsRoutes
 {
     public static void Student(this WebApplication app)
     {
+        // This endpoint adds a new student to the database
         app.MapPost("api/estudantes", async (Student student, AppDbContext dbContext) =>
         {
             // Add the student object to the dbContext
