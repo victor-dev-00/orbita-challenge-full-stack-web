@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9RZ3KQeujTWBRHB9nbay1ewHLWYPF6uPJ7QXn1wSWN4tR5M5mr2dVjrGCPiiWNd0esR9YYiw4de2NBeVXrpK0A==",
+  "dgSpecHash": "NWVNCQ8FCigcpRAHF2zsF3ASTOUsOrPe1Z/7pJOuKH5w//MQAvUBaBR4C7fATd4GSqRYWeN34rgxJ/oIjS9+cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
+  "projectFilePath": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Victor\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

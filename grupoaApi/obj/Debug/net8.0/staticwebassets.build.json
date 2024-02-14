@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FVhl9/HkhP05mXg3cnQitoE8TkpvLU+svDi/Lvv8IzM=",
+  "Hash": "XArFlTEcsEAc38pKLL8oXiITkAhdbKl+f/1mgdddbtM=",
   "Source": "grupoaApi",
   "BasePath": "_content/grupoaApi",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\Victor\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\grupoaApi.styles.css",
+      "Identity": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\grupoaApi.styles.css",
       "SourceId": "grupoaApi",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/grupoaApi",
       "RelativePath": "grupoaApi.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\grupoaApi.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\grupoaApi.styles.css"
     }
   ]
 }

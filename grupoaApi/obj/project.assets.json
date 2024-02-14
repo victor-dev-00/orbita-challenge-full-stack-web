@@ -7177,11 +7177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
+      "projectUniqueName": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
       "projectName": "grupoaApi",
-      "projectPath": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
+      "projectPath": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\grupoaApi.csproj",
       "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Victor\\Desktop\\projeto\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\",
+      "outputPath": "C:\\Users\\Victor\\Desktop\\orbita-challenge-full-stack-web\\grupoaApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
